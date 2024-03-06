@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.jungcar">
+
+    <application
+
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Jungcar"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="qefbelztmt" />
+
+        <activity
+            android:name=".MainPage"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".Smsreceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="1">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"></action>
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".BuyOption" />
+        <activity android:name=".setCondition" />
+        <activity android:name=".NameCond" />
+        <activity android:name=".ShResult" />
+        <activity
+            android:name=".SetNumeric"
+            android:theme="@android:style/Theme.Dialog"></activity>
+        <activity
+            android:name=".QnA"
+            android:theme="@android:style/Theme.Dialog"></activity>
+        <activity android:name=".MyPage" />
+        <activity android:name=".ShItem" />
+        <activity android:name=".MainSell" />
+        <activity android:name=".SetOption" />
+        <activity android:name=".SetSellCar" />
+        <activity android:name=".SellCondition" />
+        <activity
+            android:name=".SellNumeric"
+            android:theme="@android:style/Theme.Dialog"></activity>
+        <activity
+            android:name=".SetCountry"
+            android:theme="@android:style/Theme.Dialog"></activity>
+        <activity android:name=".ShCarImg"></activity>
+        <activity
+            android:name=".BuyLabel"
+            android:theme="@android:style/Theme.Dialog"></activity>
+        <activity
+            android:name=".setCarTrade"
+            android:theme="@android:style/Theme.Dialog"></activity>
+        <activity
+            android:name=".CarEdit"
+            android:theme="@android:style/Theme.Dialog"></activity>
+        <activity android:name=".setImg" />
+        <activity android:name=".ShOption" />
+        <activity android:name=".MyPageSell" />
+        <activity android:name=".Dealer" />
+        <activity android:name=".MainPart" />
+        <activity android:name=".PartSelect" />
+        <activity android:name=".AddDist" />
+        <activity android:name=".AddOil" />
+        <activity android:name=".SetSellPart" />
+
+        <activity android:name=".ShPartItem" />
+        <activity android:name=".RecordHome" />
+        <activity android:name=".SelectManage" />
+        <activity android:name=".AddMaintain" />
+        <activity android:name=".login" />
+        <activity android:name=".AddCrash" />
+        <activity android:name=".shCrashImg" />
+        <activity android:name=".CrashLocation" />
+        <activity
+            android:name=".getCenter"
+            android:theme="@android:style/Theme.Dialog"></activity>
+        <activity
+            android:name=".CarSearch"
+            android:theme="@android:style/Theme.Dialog"></activity>
+        <activity android:name=".CarRecord" />
+        <activity android:name=".ShStatics" />
+        <activity android:name=".ShSerSch" />
+        <activity android:name=".SelectReserve" />
+        <activity android:name=".FindCenter" />
+        <activity android:name=".LaborCost" />
+        <activity android:name=".Community" />
+        <activity android:name=".Board" />
+        <activity android:name=".BoardWrite" />
+        <activity android:name=".BoardRead" />
+        <activity android:name=".BoardSearch" />
+        <activity android:name=".shQna" />
+        <activity android:name=".MyPageComm" />
+        <activity android:name=".MyPagePayment" />
+        <activity
+            android:name=".DealerPopup"
+            android:theme="@android:style/Theme.Dialog"></activity>
+        <activity
+            android:name=".Idpopup"
+            android:theme="@android:style/Theme.Dialog"></activity>
+        <activity
+            android:name=".passwdPopup"
+            android:theme="@android:style/Theme.Dialog"></activity>
+        <activity
+            android:name=".QrCapture"
+            android:screenOrientation="fullSensor"
+            tools:replace="screenOrientation"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity android:name=".editCrash" />
+        <activity android:name=".editDist" />
+        <activity android:name=".editMaintain" />
+        <activity android:name=".editOil" />
+
+
+
+
+
+
+
+    </application>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS"></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+</manifest>

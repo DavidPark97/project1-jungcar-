@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/main"
+                android:text="중카"
+                android:textAlignment="center"
+                android:textSize="30dp"></ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"></ImageView>
+
+            <ImageView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"></ImageView>
+
+            <ImageView
+                android:id="@+id/imgMy"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/mypage"></ImageView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvBuy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#71c7ec"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="차량구매"
+            android:textColor="@color/white"
+            android:textSize="15dp"></TextView>
+
+        <TextView
+            android:id="@+id/tvSell"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#71c7ec"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="차량판매"
+            android:textColor="@color/white"
+            android:textSize="15dp"></TextView>
+
+
+        <TextView
+            android:id="@+id/tvPart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#71c7ec"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="부품거래"
+            android:textColor="@color/white"
+            android:textSize="15dp"></TextView>
+
+
+        <TextView
+            android:id="@+id/tvRecord"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#71c7ec"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="차량기록부"
+            android:textColor="@color/white"
+            android:textSize="15dp"></TextView>
+
+
+        <TextView
+            android:id="@+id/tvCommunity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#71c7ec"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="커뮤니티"
+            android:textColor="@color/white"
+            android:textSize="15dp"></TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"></TextView>
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"></TextView>
+
+        <TextView
+            android:id="@+id/tvPartBuy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ddd"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="부품구매"
+            android:textColor="#999"
+            android:textSize="15dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/tvPartSell"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:background="#ddd"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="부품판매"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:textStyle="bold"></TextView>
+
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></TextView>
+
+    </LinearLayout>
+
+    <Spinner
+        android:layout_marginRight="100dp"
+        android:id="@+id/spinType"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+
+    </Spinner>
+
+    <EditText
+        android:id="@+id/edtSubject"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="0.15"
+        android:hint="상품명(제목)"
+        android:textSize="13dp"></EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="판매 가격"
+            android:textColor="#000"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="*"
+            android:textColor="#7ec7ec"></TextView>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtPrice"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="0.15"
+        android:hint="가격을 입력하세요"
+        android:textSize="13dp"></EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05"
+        android:text="상품 상태"
+        android:textColor="#000"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnUnOpen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/edge"
+            android:text="미개봉">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNewly"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/edge"
+            android:text="거의 새것">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnUsed"
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/edge"
+            android:text="사용감있음">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="배송 방법"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="*"
+            android:textColor="#7ec7ec"></TextView>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rgDelivery"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbDirect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="직거래"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rbDelivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="택배 거래"></RadioButton>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="판매자 정보"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:textStyle="bold"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="010-0000-0000"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/chkAgree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></CheckBox>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-5dp"
+                android:text="휴대전화번호 노출 동의"></TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#cccccc"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.2"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnImg"
+            android:layout_width="30dp"
+            android:layout_height="26dp"
+            android:src="@drawable/img"></ImageButton>
+
+        <EditText
+            android:id="@+id/edtContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="내용을 입력하세요">
+
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.2"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/edge"
+            android:src="@drawable/ic_launcher_background"
+            android:text="취소"
+            android:textColor="@color/black"></androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnEnroll"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_weight="2"
+            android:background="@drawable/nostroke"
+            android:text="등 록"
+            android:textColor="@color/white"
+            android:textStyle="bold"></androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+
+</LinearLayout>

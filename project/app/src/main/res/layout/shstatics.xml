@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back"
+            android:id="@+id/btnBack"></ImageButton>
+        <TextView
+            android:layout_width="match_parent"
+            android:text="통계"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_height="50dp"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:background="#000"
+        android:layout_height="0dp"
+        android:layout_weight="0.4">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/yearList"
+            android:layout_height="match_parent"
+            android:scrollbars="horizontal">
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#00ffaa"
+        android:orientation="vertical"
+        android:layout_weight="0.7">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:orientation="horizontal"
+            android:layout_weight="1.2">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="총 주유비">
+
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textSize="15dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:id="@+id/tvCharge"
+                    android:layout_weight="1"
+                    android:text="4797">
+
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="총 정비">
+
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textSize="15dp"
+                    android:textAlignment="center"
+                    android:id="@+id/tvMaintain"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:text="0원"></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+
+                    android:textAlignment="center"
+                    android:text="총 지출">
+
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textSize="15dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:id="@+id/tvTotal"
+                    android:text="4797"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#cccccc"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:text="총 운행거리">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:textSize="15dp"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:id="@+id/tvDist"
+                        android:text="985 KM"></TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:text="총 주유량">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:textSize="15dp"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:id="@+id/tvAmount"
+                        android:layout_weight="1"
+                        android:text="3 L"></TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#00ffaa"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:text="평균 연비">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:textSize="15dp"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:id="@+id/tvEffi"
+                        android:layout_weight="1"
+                        android:text="492.5 KM/L"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        android:orientation="vertical"
+        android:layout_weight="2">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:text="월별 지출"
+            android:layout_weight="1"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.7"
+            android:text="단위 1,000원"
+            android:layout_marginBottom="10dp"
+            android:textColor="#999"></TextView>
+            <com.github.mikephil.charting.charts.BarChart
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/chOutcome"
+                android:background="#333"
+                android:layout_weight="8">
+
+            </com.github.mikephil.charting.charts.BarChart>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        android:orientation="vertical"
+        android:layout_weight="2">
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:text="월별 평균연비"
+            android:layout_weight="1"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.7"
+            android:text="단위Km/L"
+            android:layout_marginLeft="10dp"
+            android:textColor="#999"></TextView>
+        <com.github.mikephil.charting.charts.LineChart
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/chEffi"
+
+            android:background="#333"
+            android:layout_weight="8">
+
+        </com.github.mikephil.charting.charts.LineChart>
+    </LinearLayout>
+</LinearLayout>

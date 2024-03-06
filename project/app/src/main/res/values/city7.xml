@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="city7">
+        <item>남구구</item>
+        <item>동구</item>
+        <item>북구</item>
+        <item>울주군</item>
+        <item>중구</item>
+
+    </string-array>
+</resources>

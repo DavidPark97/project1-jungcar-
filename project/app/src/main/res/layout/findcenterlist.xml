@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="400dp"
+    android:background="#ababab"
+    android:layout_height="100dp">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_marginTop="5dp"
+       android:layout_weight="1">
+       <TextView
+           android:layout_marginLeft="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:textSize="20dp"
+           android:textStyle="bold"
+           android:id="@+id/name"></TextView>
+   </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.5">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/distance"
+            android:layout_weight="1.8">
+
+        </TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/address"
+            android:layout_weight="8.2">
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.4">
+
+        <RatingBar
+            style="@style/Widget.AppCompat.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="1"
+            android:stepSize="0.5"
+            android:id="@+id/ratBar"
+            android:isIndicator="true"
+            android:focusable="false"
+
+            android:layout_gravity="center"
+            android:max="5">
+        </RatingBar>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="4.5"
+            android:gravity="center_vertical"
+            android:id="@+id/rate"
+            ></TextView>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:background="#cccccc"></View>
+
+        <TextView
+            android:id="@+id/cnt"
+            android:text="리뷰 0"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+        </TextView>
+    </LinearLayout>
+</LinearLayout>

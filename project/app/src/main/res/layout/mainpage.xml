@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/main"
+                android:textSize="30dp"
+                android:textAlignment="center"></ImageView>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"></ImageView>
+            <ImageView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"></ImageView>
+            <ImageView
+                android:id="@+id/imgMy"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/mypage"
+                android:layout_weight="1"></ImageView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25">
+            <TextView
+            android:id="@+id/tvBuy"
+                android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#71c7ec"
+
+            android:text="차량구매"
+            android:textSize="15dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"></TextView>
+
+        <TextView
+            android:id="@+id/tvSell"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#71c7ec"
+            android:text="차량판매"
+            android:textSize="15dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"></TextView>
+
+
+        <TextView
+            android:id="@+id/tvPart"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#71c7ec"
+            android:text="부품거래"
+            android:textSize="15dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"></TextView>
+
+
+        <TextView
+            android:id="@+id/tvRecord"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#71c7ec"
+            android:text="차량기록부"
+            android:textSize="15dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"></TextView>
+
+
+        <TextView
+            android:id="@+id/tvCommunity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#71c7ec"
+            android:text="커뮤니티"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"></TextView>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1">
+            <TextView
+                android:layout_marginLeft="10dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="차량구매"
+                android:textStyle="bold"
+                android:textSize="20dp"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1">
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/serFindCar"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:queryHint="차량을 검색하세요"
+                android:background="@drawable/skycircle2">
+            </androidx.appcompat.widget.SearchView>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:id="@+id/llSearch"
+                android:layout_height="match_parent"
+                android:paddingRight="20dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/img"></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="사진으로 검색"
+                    android:textSize="20dp"
+
+                    android:layout_gravity="center_vertical"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#ccc"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="차량판매"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:textSize="20dp"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:id="@+id/llEnroll"
+                android:layout_marginLeft="10dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/msg"></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="차량등록"
+                    android:textSize="20dp"
+                    android:layout_gravity="center_vertical"></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:id="@+id/llAnaly"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/find"></ImageView>
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="중고가분석"
+                    android:textSize="20dp"
+                    android:layout_gravity="center_vertical"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#cccccc"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="최근 등록한 부품"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:textSize="15dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/partList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="horizontal">
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#000"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1.2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5">
+
+
+
+            <TextView
+                android:paddingTop="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="커뮤니티 베스트"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="0.55">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvWeek"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.9"
+                android:text="주간"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:layout_marginLeft="1dp"
+                android:textSize="17dp"></TextView>
+                <View
+                    android:id="@+id/vweek"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#cccccc"></View>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvMonth"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:text="월간"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:layout_marginLeft="1dp"
+                android:textSize="17dp"></TextView>
+                <View
+                    android:id="@+id/vMonth"
+                    android:visibility="invisible"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#cccccc"></View>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvYear"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.9"
+                android:text="년간"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:layout_marginLeft="1dp"
+                android:textSize="17dp"></TextView>
+            <View
+                android:id="@+id/vYear"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="#cccccc"></View>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3.25">
+            <ListView
+                android:layout_marginTop="10dp"
+                android:id="@+id/bestList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
