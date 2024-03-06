@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="중카"
+                android:textSize="30dp"
+                android:src="@drawable/main"
+                android:textAlignment="center"></ImageView>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"></ImageView>
+            <ImageView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"></ImageView>
+            <ImageView
+                android:id="@+id/imgMy"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/mypage"
+                android:layout_weight="1"></ImageView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+        <TextView
+            android:id="@+id/tvBuy"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#71c7ec"
+            android:text="차량구매"
+            android:textSize="15dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"></TextView>
+
+        <TextView
+            android:id="@+id/tvSell"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#71c7ec"
+            android:text="차량판매"
+            android:textSize="15dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"></TextView>
+
+
+        <TextView
+            android:id="@+id/tvPart"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#71c7ec"
+            android:text="부품거래"
+            android:textSize="15dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"></TextView>
+
+
+        <TextView
+            android:id="@+id/tvRecord"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#71c7ec"
+            android:text="차량기록부"
+            android:textSize="15dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"></TextView>
+
+
+        <TextView
+            android:id="@+id/tvCommunity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#71c7ec"
+            android:text="커뮤니티"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"></TextView>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05">
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"></TextView>
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"></TextView>
+
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/llType"
+        android:layout_weight="0.1">
+        <Spinner
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:id="@+id/spinBrdType"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"></Spinner>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"></TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:layout_margin="10dp"
+        android:background="@drawable/square">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:id="@+id/edtSubject"
+            android:hint="제목"
+            android:layout_margin="10dp"
+            android:layout_weight="0.5"></EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"></TextView>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:text="사진"
+            android:id="@+id/btnImg"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"></androidx.appcompat.widget.AppCompatButton>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:text="동영상"
+            android:id="@+id/btnVideo"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"></androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/square"
+        android:layout_weight="0.5">
+    <EditText
+        android:gravity="top"
+        android:id="@+id/edtContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:layout_margin="10dp"
+        android:layout_weight="0.5"></EditText>
+    </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:text="취소"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"></androidx.appcompat.widget.AppCompatButton>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"></TextView>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:id="@+id/btnEnroll"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:text="등록"></androidx.appcompat.widget.AppCompatButton>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"></LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="#444"
+        >
+        <ImageButton
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:background="#444"
+            android:layout_width="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="30dp"
+            android:id="@+id/btnBack"
+            android:src="@drawable/bback"></ImageButton>
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:background="#444"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="0dp"
+        android:paddingTop="10dp"
+        android:layout_weight="0.6">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+
+            android:layout_marginLeft="10dp"
+            android:text="2023년 02 월"
+            android:id="@+id/tvDate"
+            android:textStyle="bold"
+            android:textColor="@color/white"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:layout_weight="0.8"
+        android:orientation="horizontal"
+        android:background="#444">
+        <TextView
+            android:layout_width="0dp"
+            android:textAlignment="center"
+            android:layout_weight="1.8"
+            android:layout_height="wrap_content"
+            android:text="이달의 점검"
+            android:textColor="@color/white"></TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="현재 누적주행거리 :"
+            android:textColor="#aaa"></TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:text="5,888 km"
+            android:id="@+id/tvDist"
+            android:textColor="#aaa"></TextView>
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7">
+        <ListView
+            android:layout_width="match_parent"
+            android:id="@+id/reserveList"
+            android:layout_height="match_parent"></ListView>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:id="@+id/btnCenter"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="bottom|center"
+            android:text="정 비 소 찾 기"
+></androidx.appcompat.widget.AppCompatButton>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:padding="20dp"
+            android:id="@+id/btnRecord"
+            android:text="정 비 기 록 하 기"
+            android:layout_marginRight="10dp">
+
+        </androidx.appcompat.widget.AppCompatButton>
+    </FrameLayout>
+</LinearLayout>
